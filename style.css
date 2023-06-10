@@ -18,8 +18,6 @@
 .left-header-box {
   float: left;
   padding: 10px 15px;
-
-  max-width: 220px;
   height: 55px;
 }
 a {
@@ -56,7 +54,6 @@ a {
 .right-header-box {
   float: right;
   display: block;
-
   width: 150px;
   height: 55px;
   padding: 10px 15px;
@@ -66,11 +63,16 @@ a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 320px;
+  width: 420px;
   height: 37px;
   border-radius: 20px;
   top: 1rem;
   background-color: rgb(194, 183, 169);
+}
+@media (max-width: 500px) {
+  #search-box {
+    width: 22rem;
+  }
 }
 input {
   width: 150px;
@@ -115,7 +117,7 @@ li {
   display: inline-block;
   height: 40px;
 }
-#nav-button{
+#nav-button {
   display: none;
 }
 .header-text-box li:hover {
@@ -125,70 +127,81 @@ li {
 i.fa-bars {
   display: none;
 }
-@media (max-width: 580px) {
-  .navbar-header{
+
+@media (max-width: 500px) {
+  .navbar-header {
     padding-bottom: 1.2rem;
-    border-bottom: 1px solid lightgray;
   }
   .header-text-box {
-  display: flex;
-  position: relative;
-top: 1rem;
-left: 38rem;
-  font-size: 3rem;
-  cursor: pointer;
-  height: 40px;
- border: none;
-}
-
+    float: right;
+    top: 1rem;
+    right: -10rem;
+    font-size: 3rem;
+    cursor: pointer;
+    height: 40px;
+    border: none;
+    width: 0rem;
+  }
+  #responsive-nav {
+    animation: move 1s ease-in-out 2 alternate;
+  }
+  @keyframes move {
+    from {
+      opacity: 0;
+      transform: translateY(0px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-200px);
+    }
+  }
   .right-header-box {
     visibility: hidden;
   }
- 
-   
 
   .left-header-box h1 {
     display: none;
   }
   #nav-button ~ nav {
-  display: none;
-}
-#nav-button:checked ~ nav {
-  display: block;
-}
-#nav-button {
-  display: none;
-}
-#checkbox-label {
-  display: flex;
-  width: 42px;
-  height: 42px;
-  text-align: center;
-  cursor: pointer;
-}
+    display: none;
+  }
+  #nav-button:checked ~ nav {
+    display: block;
+  }
+  #nav-button {
+    display: none;
+  }
+  #checkbox-label {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    cursor: pointer;
+  }
 
-#responsive-nav ul{
-  position: relative;
-top: 4rem;
-width: 100vw;
-height: 100vh;
- display: flex;
- flex-direction: column;
- gap: 3rem;
-  right:47rem;
-  font-size: 4rem;
-  padding: 7rem;
-background-color: #3b3830ad; 
+  #responsive-nav ul {
+    position: relative;
+    top: 4rem;
+    width: 50rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 3rem;
+    top: 0rem;
+    right: 46rem;
+    font-size: 4rem;
+    padding: 7rem;
+    background-color: #3b3830ad;
+  }
+    #responsive-nav li {
+    font-weight: 600;
+    color: white;
+    border-bottom: none;
+  }
 }
-#responsive-nav li{
-  font-weight: 600;
-  color:white;
-  border-bottom: none;
-}
-
 
 #nav-button + label::before {
-
   font: var(--fa-font-solid);
   content: "\f0c9";
   font-size: 3.5rem;
@@ -199,12 +212,24 @@ background-color: #3b3830ad;
   content: "Close";
   font: var(--fa-font-solid);
   content: "\f00d";
-
   font-size: 3.5rem;
 }
-#nav-button:checked body{
-  background-color: #007fee;
+
+label {
+  display: none;
 }
+@media (min-width:501px) and (max-width:855px) {
+ .header-text-box{
+  border-bottom: none;
+ }
+ #responsive-nav ul li{
+  position: relative;
+left: -6rem;
+
+ }
+ .right-header-box{
+  display: none;
+ }
 }
 /*--------------main------------*/
 main {
@@ -285,11 +310,23 @@ main {
   text-align: center;
 }
 .text_item_1 {
-  opacity: 0;
-
+  opacity: 1;
+  animation: move 2s ease-in-out 2 alternate;
+  animation-delay: 1s;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-200px);
+  }
 }
 .text_item_2 h3 {
   transition: all 2s ease-out;
@@ -301,27 +338,45 @@ main {
   position: relative;
   box-shadow: 0 25px 80px -7px rgba(74, 73, 73, 0.25);
 }
-.text_item_2 {
-  opacity: 0.7;
-  transition: all 2s ease-out;
-  transform: scale(1, 1);
-  padding: 3rem;
-}
+
 @media (max-width: 500px) {
+  .text_item_1 {
+    animation: move 4s ease-in-out 1 forwards;
+    animation-delay: 1s;
+  }
+  @keyframes move {
+    from {
+      opacity: 0;
+      transform: translateY(0px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(220px);
+    }
+  }
   .item-1 p {
-    font-size: 1rem;
+    position: relative;
+    bottom: 18rem;
+    font-weight: 400;
+    font-size: 1.4rem;
   }
   .item-1 h3 {
+    position: relative;
+    bottom: 18rem;
     font-size: 2rem;
   }
   .item-1 {
     height: 40rem;
-    flex: 0 0 100%;
+    width: 100%;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .item-1 {
+    height: 50rem;
   }
 }
 /*-----------main-section-------------*/
 .main-section {
-  width: 90vw;
   margin-top: 2rem;
   display: flex;
   flex-flow: row wrap;
@@ -354,7 +409,7 @@ main {
   transform: scale(1);
   cursor: pointer;
   object-fit: cover;
-   transition: all 0.3s;
+  transition: all 0.3s;
 }
 .main-section .text-box-blog-2 {
   width: 100%;
@@ -369,9 +424,9 @@ main {
   align-items: center;
   row-gap: 1rem;
 }
-.h2 {
+.main-section h2 {
   color: #007fee;
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 .item-5 h2,
@@ -384,7 +439,7 @@ main {
   color: #b589089e;
   font-size: 1.2rem;
   border-bottom: 1px solid gainsboro;
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
 }
 .item-5 p,
 .item-6 p,
@@ -397,22 +452,6 @@ h6 {
   color: lightgray;
   margin-bottom: 3rem;
 }
-
-/* .text-box-blog-2 .stars-box {
-  border: none;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 100vh;
-}
-.stars-box .blog-stars-left-box{
-  border: none;
-  font-size: 1.2rem;
- 
-} */
-
 .item-2:hover,
 .item-3:hover,
 .item-4:hover,
@@ -431,7 +470,30 @@ h6 {
     flex-wrap: wrap;
     gap: 1rem;
   }
-  .main-section > div {
+  .main-section div {
     flex: 1 1 100%;
   }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .main-section {
+    width: 100vw;
+    display: inline-block;
+    gap: 1rem;
+  }
+  .main-section .item-2,
+  .main-section .item-3,
+  .main-section .item-4,
+  .main-section .item-5,
+  .main-section .item-6,
+  .main-section .item-7,
+  .main-section .item-8,
+  .main-section .item-9 {
+    width: 40%;
+    display: inline-block;
+
+    margin-left: 2rem;
+  }
+}
+#responsive-nav {
+  display: block;
 }
