@@ -330,7 +330,7 @@ i.fa-bars {
   .right-header-box {
     display: none;
   }
-  
+
   #responsive-nav .first-list-menu ul {
     position: absolute;
     display: flex;
@@ -404,7 +404,7 @@ input[type="submit"]:hover {
   .contact-container {
     left: -18rem;
   }
-   input[type="text"],
+  input[type="text"],
   [type="email"],
   select,
   textarea {
@@ -417,6 +417,158 @@ input[type="submit"]:hover {
   }
 }
 /*-------------end contact form---------------------*/
+/*----*/
+.photo-container {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-photo{
+  display: inline-block;
+}
+summary {
+  list-style-type: none;
+}
+.mySlides {
+  display: none;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+
+}
+.fade img {
+  width: 100rem;
+  height: 70rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: #3d3b3770;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right:0rem;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.photo-container:hover{
+border-bottom: 1px solid red;
+}
+
+/* On smaller screens, decrease text size */
+@media  (max-width: 480px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+
+  .next{
+    right: 0rem;
+  }
+  .slideshow-container{
+    left: -23rem;
+  }
+  .fade img {
+    height: 40rem;
+    width: 40rem;
+    
+  }
+}
+@media (min-width:481px) and (max-width:768px) {
+  .fade img {
+    width: 70vw;
+    height: 60rem;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+@media (min-width:769px) {
+  .fade img {
+  width: 90%;
+  height: 70rem;
+  object-fit: cover;
+  margin-left: 10rem ;
+  margin-right: 10rem;
+}
+.prev {
+  left: 10rem;
+}
+.numbertext{
+  margin-left: 10rem;
+  font-weight: bold;
+}
+}
+/*------*/
 /*--------------main------------*/
 main {
   width: 90%;
@@ -643,11 +795,10 @@ main {
   width: 100vw;
 }
 h6 {
-height: 10%;
+  height: 10%;
   font-weight: 500;
   font-size: 1.2rem;
   color: rgb(242, 229, 189);
- 
 }
 .main-section span {
   color: whitesmoke;

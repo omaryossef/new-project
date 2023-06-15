@@ -166,7 +166,103 @@
               </details>
             </li>
             <li>Video</li>
-            <li>Photos</li>
+            <li class="photo-container">
+              <details class="dropdown-photo">
+                <summary>Images</summary>
+                <div class="slideshow-container">
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 9</div>
+                    <img
+                      src="/blog-imag/15. PLAYA DE LA CONCHA _SAN SEBASTIÁN_ESPAÑA.webp"
+                    />
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 9</div>
+                    <img
+                      src="/blog-imag/12. DRIFTWOOD BEACH _ISLA DE JEKYLL_GEORGIA.webp"
+                    />
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 9</div>
+                    <img
+                      src="/blog-imag/13. MANLY BEACH _SÍDNEY,_AUSTRALIA.webp"
+                    />
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">4 / 9</div>
+                    <img
+                      src="/blog-imag/16. KELINGKING BEACH _NUSA PENIDA_BALI.webp"
+                    />
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 9</div>
+                    <img src="/blog-imag/2. EAGLE BEACH _ARUBA.webp" />
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">6 / 9</div>
+                    <img src="/blog-imag/manuel-antonio-alamy.webp" />
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">7 / 9</div>
+                    <img src="/blog-imag/3. CABLE BEACH.webp" />
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">8 / 9</div>
+                    <img src="/blog-imag/4. REYNISFJARA _VIK_ISLANDIA.webp" />
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">9 / 9</div>
+                    <img src="/blog-imag/9. PLAYA DE VARADERO _CUBA.webp" />
+                  </div>
+                  <a class="prev" onclick="plusSlides(-1)">❮</a>
+                  <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br />
+
+                <div style="text-align: center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <script>
+                  let slideIndex = 1;
+                  showSlides(slideIndex);
+
+                  function plusSlides(n) {
+                    showSlides((slideIndex += n));
+                  }
+
+                  function currentSlide(n) {
+                    showSlides((slideIndex = n));
+                  }
+
+                  function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                      slideIndex = 1;
+                    }
+                    if (n < 1) {
+                      slideIndex = slides.length;
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(
+                        " active",
+                        ""
+                      );
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                  }
+                </script>
+              </details>
+            </li>
             <li>Resources</li>
           </ul>
         </nav>
@@ -457,7 +553,8 @@
             <div class="col-md-6 item text">
               <h3>vamos a la playa</h3>
               <p>
-              On this page, we offer you an overview of the most beautiful beaches in the world, with some explanations and pictures.
+                On this page, we offer you an overview of the most beautiful
+                beaches in the world, with some explanations and pictures.
               </p>
             </div>
           </div>
