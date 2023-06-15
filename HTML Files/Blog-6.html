@@ -49,9 +49,97 @@
         <label for="nav-button" id="checkbox-label"></label>
         <nav id="responsive-nav">
           <ul>
-            <li>Planning</li>
-            <li>Destinations</li>
-            <li>About</li>
+          <li class="first-list-menu">
+            <details class="dropdown">
+              <summary role="button">
+                <a class="button">Planning</a>
+              </summary>
+              <ul>
+                <li>
+                  <a href="https://www.eskytravel.de/" target="_blank"><i class="fa-solid fa-plane-departure"></i>Find Cheap
+                    Flights
+                    <div class="second-list-text">via Skyscanner</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.booking.com/" target="_blank"><i class="fa-solid fa-hotel"></i>Find Hotels
+                    <div class="second-list-text">via Booking.com</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.hostelworld.com/" target="_blank"><i class="fa-solid fa-bed"></i>Find Hostels
+                    <div class="second-list-text">via Hostelword</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.discovercars.com/" target="_blank"><i class="fa-solid fa-car-side"></i>Rent a Car
+                    <div class="second-list-text">via DiscoverCars</div>
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="first-list-menu">
+            <details class="dropdown">
+              <summary role="button">
+                <a class="button">Destinations</a>
+              </summary>
+              <ul>
+                <li>
+                  <a href="">Asia <i class="fa-solid fa-earth-asia"></i></a>
+                </li>
+                <li>
+                  <a href="">Africa <i class="fa-solid fa-earth-africa"></i></a>
+                </li>
+                <li>
+                  <a href="">North America <i class="fa-solid fa-earth-americas"></i></a>
+                </li>
+                <li>
+                  <a href="">South America <i class="fa-solid fa-earth-americas"></i></a>
+                </li>
+                <li>
+                  <a href="">Europe <i class="fa-solid fa-earth-europe"></i></a>
+                </li>
+                <li>
+                  <a href="">Australia <i class="fa-solid fa-earth-oceania"></i></a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="first-list-menu">
+            <details class="dropdown">
+              <summary role="button">
+                <a class="button">contact</a>
+              </summary>
+              <div class="contact-container">
+                <form action="/action_page.php">
+                  <label for="fname">Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your full name.." />
+          
+                  <label for="email-input">Email</label>
+                  <input type="email" id="email-input" name="email" placeholder="john@mail.com" />
+                  <label for="beach">Beach</label>
+                  <select id="beach" name="beach">
+                    <option>CABLE BEACH</option>
+                    <option>DE IPANEMA Beach</option>
+                    <option>DRIFTWOOD BEACH</option>
+                    <option value="">Eagle Beach</option>
+                    <option value="">Kelingking Beach</option>
+                    <option value="">LA CONCHA BEACH</option>
+                    <option value="">MANLY BEACH</option>
+                    <option value="">MANUEL ANTONIO BEACH</option>
+                    <option value="">REYNISFJARA BEACH</option>
+                    <option value="">Varadero Beach</option>
+                  </select>
+          
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px"></textarea>
+          
+                  <input type="submit" value="Submit" />
+                </form>
+              </div>
+            </details>
+          </li>>
             <li>Video</li>
             <li>Photos</li>
             <li>Resources</li>
