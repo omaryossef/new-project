@@ -24,7 +24,7 @@
 h1 {
   top: 0.8rem;
 }
- a {
+a {
   text-decoration: none;
   color: white;
 }
@@ -324,7 +324,7 @@ i.fa-bars {
   .right-header-box {
     display: none;
   }
-  
+
   #responsive-nav .first-list-menu ul {
     position: absolute;
     display: flex;
@@ -385,12 +385,12 @@ input[type="submit"]:hover {
 }
 
 .contact-container {
-    position: absolute;
+  position: absolute;
   border-radius: 5px;
   background-color: rgba(79, 78, 73, 1);
   padding: 20px;
   width: 70vw;
- left: -50rem;
+  left: -50rem;
   margin-top: 1.6rem;
   margin: 0 auto;
 }
@@ -398,9 +398,8 @@ input[type="submit"]:hover {
   .contact-container {
     left: -25rem;
     width: 42rem;
-  
   }
-   input[type="text"],
+  input[type="text"],
   [type="email"],
   select,
   textarea {
@@ -645,6 +644,14 @@ h6 {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  filter: grayscale();
+  transition: filter 0.4s ease-in-out;
+}
+.right-image-box img:hover {
+  border: 1px solid lightgray;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  cursor: pointer;
+  	filter: none;
 }
 .second-section-right-text-box {
   margin-top: 50px;
@@ -669,11 +676,7 @@ h6 {
   padding-right: 15px;
   cursor: pointer;
 }
-.right-image-box img:hover {
-  border: 1px solid lightgray;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  cursor: pointer;
-}
+
 i {
   color: #b589089e;
   padding-bottom: 2rem;

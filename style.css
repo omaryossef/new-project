@@ -11,7 +11,7 @@
 --nav-color:black; */
 }
 body {
-  background-color: rgba(105, 100, 4, 0.128);
+  background-color:rgb(193 155 76 / 34%)
 }
 
 /*----------header--------------*/
@@ -133,26 +133,17 @@ i.fa-bars {
   display: none;
 }
 /*-------start planning dropdown menu----------------*/
-.first-list-menu .dropdown summary::before  {
+.first-list-menu .dropdown summary::before {
   display: none;
 }
-.dropdown[open] > summary::before {
-    content: ' ';
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-}
-#responsive-nav .first-list-menu ul {
+
+#responsive-nav .first-list-menu .hover-3{
   position: absolute;
   display: flex;
   flex-direction: column;
   background-color: beige;
   width: 30rem;
-  height: 36rem;
+  height: 40rem;
   align-items: flex-start;
   line-height: 2.2rem;
   margin-top: 1.6rem;
@@ -208,6 +199,29 @@ i.fa-bars {
 .dropdown summary {
   display: inline;
   list-style-type: none;
+}
+.box:hover {
+  width: 100%;
+  height: 8rem;
+  background-color: #3d3b3713;
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.2s all;
+}
+.box:hover .second-list-text {
+  color:#007fee;
+}
+
+.hover-3:hover .box {
+  filter: blur(3px);
+  opacity: 0.5;
+  transform: scale(0.98);
+  box-shadow: none;
+}
+.hover-3:hover .box:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow: 0 8px 20px 0px rgba(49, 49, 48, 0.125);
 }
 /*-------end planning dropdown menu----------------*/
 @media (max-width: 480px) {
@@ -284,7 +298,7 @@ i.fa-bars {
     font-size: 2rem;
   }
   /*******/
-  #responsive-nav .first-list-menu ul {
+  #responsive-nav .first-list-menu .hover-3 {
     width: 24rem;
     height: 50%;
     align-items: center;
@@ -410,8 +424,7 @@ input[type="submit"]:hover {
   position: absolute;
   width: 90vw;
   left: 6rem;
-margin-top:1.6rem;
- 
+  margin-top: 1.6rem;
 }
 @media (max-width: 480px) {
   .contact-container {
@@ -435,20 +448,21 @@ margin-top:1.6rem;
   display: inline-block;
   position: relative;
 }
-.dropdown-photo{
+.dropdown-photo {
   display: inline-block;
 }
 summary {
   list-style-type: none;
 }
 .mySlides {
-  display: none;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-
 }
 .fade img {
   width: 100rem;
@@ -475,7 +489,7 @@ summary {
 }
 
 .next {
-  right:0rem;
+  right: 0rem;
   border-radius: 3px 0 0 3px;
 }
 .prev {
@@ -522,31 +536,41 @@ summary {
     opacity: 1;
   }
 }
-.header-text-box .photo-container:hover{
-border-bottom: none;
+.header-text-box .photo-container:hover {
+  border-bottom: none;
 }
 
 /* On smaller screens, */
-@media  (max-width: 480px) {
+@media (max-width: 480px) {
   .prev,
   .next,
   .text {
     font-size: 11px;
   }
 
-  .next{
+  .next {
     right: 0rem;
   }
-  .slideshow-container{
+  
+  .slideshow-container {
     left: -23rem;
   }
   .fade img {
     height: 40rem;
     width: 40rem;
-    
   }
+.circle-img-unterbox{
+position: relative;
+width: 100%;
+right: 23rem;  
 }
-@media (min-width:481px) and (max-width:768px) {
+.dot{
+  height: 0.8rem;
+  width: 0.8rem;
+
+}
+}
+@media (min-width: 481px) and (max-width: 1200px) {
   .fade img {
     width: 70vw;
     height: 60rem;
@@ -554,23 +578,12 @@ border-bottom: none;
     object-position: center center;
   }
 }
-@media (min-width:769px) {
-  .fade img {
-  width: 90%;
-  height: 70rem;
-  object-fit: cover;
-  margin-left: 10rem ;
-  margin-right: 10rem;
 
-}
-.prev {
-  left: 10rem;
-}
-.numbertext{
-  margin-left: 10rem;
-  font-weight: bold;
-}
-}
+  .numbertext {
+    margin-left: 10rem;
+    font-weight: bold;
+  }
+
 /*---------end slidshow container-------*/
 /*--------------main------------*/
 main {
@@ -589,13 +602,13 @@ main {
   font-size: 2rem;
 }
 .main-header-text h2 {
-  color: #b589089e;
+  color: #6e5303f2;
   padding-bottom: 2rem;
   font-size: 7rem;
   font-weight: 900;
 }
 .main-header-text h4 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.8rem;
   color: rgb(47, 46, 46);
   line-height: 3rem;
@@ -753,7 +766,7 @@ main {
   cursor: pointer;
   object-fit: cover;
   transition: all 0.3s;
-  background-color: rgba(79, 78, 73, 0.434);
+  background-color: #2a1f0066;
 }
 .main-section .text-box-blog-2 {
   width: 100%;
@@ -769,7 +782,7 @@ main {
   row-gap: 1rem;
 }
 .main-section h2 {
-  color: #007fee;
+  color: #012e39e3;
   font-size: 2rem;
   text-transform: uppercase;
 }
