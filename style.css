@@ -832,7 +832,7 @@ h6 {
   .main-section {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
   }
   .main-section div {
     flex: 1 1 100%;
