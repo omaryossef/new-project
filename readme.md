@@ -22,8 +22,9 @@ navbar-header: (html)start :21 ,(html) end:298 {
 
 **slidshow container:(html) start:190 , (html) end:292. //(css) start:460 , (css) end:598
 
-}
-*********End Header***************
+}.
+
+***End Header***
 
 ********start Main********
 main : (html)start :303 ,(html) end:298 {
