@@ -1,43 +1,45 @@
 welcom to my page (VAMOS A LA PLAYA).
             
-            
+
 ***HOMEPAGE***
 
 ***header***
 
 ***start header***
-navbar-header: (html)start :21 ,(html) end:298 {
-** left-header-box:(html) start:23 , (html) end:32. //(css) start:23 , (css) end:60
 
-** right-header-box:(html) start:34 , (html) end:39. //(css) start:61 , (css) end:73
+**navbar-header**: (html)start :21 ,(html) end:298 {
+**left-header-box**:(html) start:23 , (html) end:32. //(css) start:23 , (css) end:60
 
-** search-box:(html) start:41 , (html) end:51. //(css) start:75 , (css) end:114
+**right-header-box**:(html) start:34 , (html) end:39. //(css) start:61 , (css) end:73
 
-** header-text-box:(html) start:41 , (html) end:283. {
-** planning list:(html) start:61 , (html) end:96. //(css) start:145 , (css) end:239 .
+**search-box**:(html) start:41 , (html) end:51. //(css) start:75 , (css) end:114
 
-** Destinations list:(html) start:98 , (html) end:136. //(css) start:145 , (css) end:239 .
+**header-text-box**:(html) start:41 , (html) end:283. {
 
-**hover effect for (planning & Destinations) list (with clase:hover-3):(css) start:227 , (css) end:238 .
+**planning list**:(html) start:61 , (html) end:96. //(css) start:145 , (css) end:239 .
 
-**contact form:(html) start:138 , (html) end:186. //(css) start:392 , (css) end:458
+**Destinations list**:(html) start:98 , (html) end:136. //(css) start:145 , (css) end:239 .
 
-**slidshow container:(html) start:190 , (html) end:292. //(css) start:460 , (css) end:598
+**hover effect for (planning & Destinations) list (with clase:hover-3)**:(css) start:227 , (css) end:238 .
+
+**contact form**:(html) start:138 , (html) end:186. //(css) start:392 , (css) end:458
+
+**slidshow container**:(html) start:190 , (html) end:292. //(css) start:460 , (css) end:598
 
 }.
 
 ***End Header***
 
 ***start Main***
-main : (html)start :303 ,(html) end:298 {
+***main*** : (html)start :303 ,(html) end:298 {
 
-**main-header-text:(html) start:305 , (html) end:314. //(css) start:606 , (css) end:628
+**main-header-text**:(html) start:305 , (html) end:314. //(css) start:606 , (css) end:628
 
-**Haoupt Blog (class:item-1):(html) start:317 , (html) end:329. //(css) start:630 , (css) end:748
+**Haoupt Blog (class:item-1)**:(html) start:317 , (html) end:329. //(css) start:630 , (css) end:748
 
-**Main sections (class:item-1):(html) start:331 , (html) end:565. //(css) start:750 , (css) end:883
+***Main sections***:(html) start:331 , (html) end:565. //(css) start:750 , (css) end:883
 
-***main section have the following sections with the following klasse [
+**main section have the following sections with the following klasse**[
   .main-section .item-2,
   .main-section .item-3,
   .main-section .item-4,
