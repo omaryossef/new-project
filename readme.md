@@ -1,9 +1,11 @@
 welcom to my page (VAMOS A LA PLAYA).
-               
-               HOMEPAGE.
+            
+            
+***HOMEPAGE***
 
-*********header********************.
+***header***
 
+***start header***
 navbar-header: (html)start :21 ,(html) end:298 {
 ** left-header-box:(html) start:23 , (html) end:32. //(css) start:23 , (css) end:60
 
@@ -26,7 +28,7 @@ navbar-header: (html)start :21 ,(html) end:298 {
 
 ***End Header***
 
-********start Main********
+***start Main***
 main : (html)start :303 ,(html) end:298 {
 
 **main-header-text:(html) start:305 , (html) end:314. //(css) start:606 , (css) end:628
@@ -48,7 +50,8 @@ main : (html)start :303 ,(html) end:298 {
   all sections have the same HTML tags and every item has the fllowing HTML tags: {a ,class(stars-box) ,span ,i ,p ,h6}
   
 }
+***Ende Main***
 
-********footer***************
+***footer***
 
 Footer:(html) start:566 , (html) end:605. //(css) start:884 , (css) end:989
