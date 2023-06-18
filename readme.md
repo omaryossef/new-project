@@ -28,13 +28,13 @@ welcom to my page (VAMOS A LA PLAYA).
 - slidshow container:(html) start:190 , (html) end:292. //(css) start:460 , (css) end:598
 
 .
-
+}
 ***End Header***
 
 ***start Main***
 ***main*** : (html)start :303 ,(html) end:298 {
 
-**main-header-text**:(html) start:305 , (html) end:314. //(css) start:606 , (css) end:628
++ main-header-text:(html) start:305 , (html) end:314. //(css) start:606 , (css) end:628
 
 **Haoupt Blog (class:item-1)**:(html) start:317 , (html) end:329. //(css) start:630 , (css) end:748
 
