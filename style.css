@@ -602,7 +602,8 @@ main {
   width: 90%;
   margin: 0 auto;
 }
-/*---------FIRST TEXT SECTION--------------*/
+
+/*---------start main-header-text--------------*/
 .main-header-text {
   height: auto;
   padding: 30px;
@@ -624,7 +625,9 @@ main {
   font-size: 1.8rem;
 color: whitesmoke;  line-height: 3rem;
 }
-/*--------------HAOUPT_BLOG-------------------------*/
+/*---------start main-header-text--------------*/
+
+/*--------------start HAOUPT_BLOG-------------------------*/
 .item-1 {
   background: linear-gradient(
       0deg,
@@ -742,6 +745,8 @@ color: whitesmoke;  line-height: 3rem;
     height: 50rem;
   }
 }
+/*-End Haoupt Blog--*/
+
 /*-----------main-section-------------*/
 .main-section {
   margin-top: 2rem;
@@ -876,7 +881,7 @@ margin-bottom: 2rem;
   color: #BC986A;
 }
 
-/*------------footer--------------*/
+/*------------start footer--------------*/
 
 .footer-dark {
   margin-top: 10rem;
@@ -981,3 +986,4 @@ margin-bottom: 2rem;
   font-size: 13px;
   margin-bottom: 0;
 }
+/*------------start footer--------------*/
