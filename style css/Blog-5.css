@@ -8,6 +8,16 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 10px;
 }
+
+//bg-color {   color:   #1F2833}
+//primary-color {color:#BC986A}
+
+--secondary-color {
+  color: #ffffff;
+}
+body {
+  background-color: #1f2833;
+}
 .navbar-header {
   position: absolute;
   display: inline-block;
@@ -24,7 +34,7 @@
 h1 {
   top: 0.8rem;
 }
- a {
+a {
   text-decoration: none;
   color: white;
 }
@@ -38,7 +48,7 @@ h1 {
   margin-right: 5px;
   top: 0;
   transition: transform 0.3s ease;
-  background-color: #b589089e;
+  background-color: #bc986a;
   border-radius: 50%;
   text-align: center;
 }
@@ -106,7 +116,7 @@ i.fa-brands {
   margin-top: 5px;
   margin-right: 10px;
   text-align: center;
-  color: #b589089e;
+  color: #f0eeeb;
   cursor: pointer;
 }
 .header-text-box {
@@ -143,7 +153,7 @@ i.fa-bars {
   position: absolute;
   display: flex;
   flex-direction: column;
-  background-color: beige;
+  background-color: #bc986a;
   width: 30rem;
   height: 36rem;
   align-items: flex-start;
@@ -180,7 +190,7 @@ i.fa-bars {
   padding: 3rem;
   word-spacing: 0;
   border-bottom: none;
-  color: black;
+  color: #bc986a;
 }
 #responsive-nav .first-list-menu ul li a {
   display: block;
@@ -191,7 +201,7 @@ i.fa-bars {
 }
 #responsive-nav .first-list-menu ul li a i {
   margin-right: 1rem;
-  color: #b589089e;
+  color: #bc986a;
 }
 .second-list-text {
   position: absolute;
@@ -324,7 +334,7 @@ i.fa-bars {
   .right-header-box {
     display: none;
   }
-  
+
   #responsive-nav .first-list-menu ul {
     position: absolute;
     display: flex;
@@ -385,12 +395,12 @@ input[type="submit"]:hover {
 }
 
 .contact-container {
-    position: absolute;
+  position: absolute;
   border-radius: 5px;
   background-color: rgba(79, 78, 73, 1);
   padding: 20px;
   width: 70vw;
- left: -50rem;
+  left: -50rem;
   margin-top: 1.6rem;
   margin: 0 auto;
 }
@@ -398,9 +408,8 @@ input[type="submit"]:hover {
   .contact-container {
     left: -25rem;
     width: 42rem;
-  
   }
-   input[type="text"],
+  input[type="text"],
   [type="email"],
   select,
   textarea {
@@ -414,7 +423,6 @@ input[type="submit"]:hover {
 }
 /*-------------end contact form---------------------*/
 /*--main-------------------------------------------------------*/
-
 .first-section {
   height: 800px;
   background-image: linear-gradient(
@@ -422,7 +430,7 @@ input[type="submit"]:hover {
       rgba(0, 0, 0, 0.9) 5%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(/blog-imag/12.\ DRIFTWOOD\ BEACH\ _ISLA\ DE\ JEKYLL_GEORGIA.webp);
+    url(/blog-imag/cable-beach-alamy.webp);
   background-position: center center;
   top: 0;
   left: 0;
@@ -558,7 +566,7 @@ h4 {
 }
 h5 {
   font-size: 2rem;
-  color: #b589089e;
+  color: #bc986a;
   padding-bottom: 2rem;
   text-align: left;
   line-height: 3rem;
@@ -578,7 +586,7 @@ h6 {
   font-size: 1.6rem;
   padding-top: 1rem;
   line-height: 3rem;
-  color: #b589089e;
+  color: #bc986a;
 }
 .wiki-text-box {
   border-bottom: 1px solid lightgrey;
@@ -645,6 +653,14 @@ h6 {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  filter: grayscale();
+  transition: filter 0.4s ease-in-out;
+}
+.right-image-box img:hover {
+  border: 1px solid lightgray;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  cursor: pointer;
+  filter: none;
 }
 .second-section-right-text-box {
   margin-top: 50px;
@@ -669,20 +685,16 @@ h6 {
   padding-right: 15px;
   cursor: pointer;
 }
-.right-image-box img:hover {
-  border: 1px solid lightgray;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  cursor: pointer;
-}
+
 i {
-  color: #b589089e;
+  color: #bc986a;
   padding-bottom: 2rem;
 }
 .second-section-right-text-box {
   width: 100%;
 }
 .second-section-right-text-box span {
-  color: rgb(55, 50, 1);
+  color: #bc986a;
   text-align: left;
   font-weight: 500;
   font-size: 1.5rem;
@@ -696,20 +708,26 @@ i {
 /*------footer-------*/
 .card {
   width: 100%;
+  background-color: #38424E;
   margin-left: 2rem;
 }
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
+.card-text{
+  color: #BC986A;
+  font-size: 1.2rem;
+}
 .card-title {
   font-size: 3rem;
   font-weight: 600;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #654d049e;
+  color: #bc986a;
 }
 .card-text-2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-top: -2rem;
+  color: white;
 }
 .card-text-1 {
   font-size: 2rem;
@@ -730,6 +748,7 @@ i {
     color: #ff6600fa;
   }
 }
+
 .col-md-4 img {
   height: 100%;
 }
