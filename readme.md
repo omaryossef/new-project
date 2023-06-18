@@ -1,7 +1,7 @@
 welcom to my page (VAMOS A LA PLAYA).
             
 
-***- HOMEPAGE***
+- HOMEPAGE
 
 ***header***
 
