@@ -828,7 +828,7 @@ h6 {
   position: relative;
   box-shadow: 0 25px 80px -7px rgba(74, 73, 73, 0.25);
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .main-section {
     flex-direction: row;
     flex-wrap: wrap;
@@ -841,8 +841,9 @@ h6 {
 @media (min-width: 481px) and (max-width: 768px) {
   .main-section {
     width: 100vw;
+    height: 100vh;
     display: inline-block;
-    gap: 1rem;
+
   }
   .main-section .item-2,
   .main-section .item-3,
@@ -854,7 +855,7 @@ h6 {
   .main-section .item-9 {
     width: 40%;
     display: inline-block;
-
+margin-bottom: 2rem;
     margin-left: 2rem;
   }
 }
