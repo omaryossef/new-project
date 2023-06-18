@@ -45,7 +45,7 @@ welcom to my page (VAMOS A LA PLAYA).
 ***Main sections***:
 (html) start:331 , (html) end:565. //(css) start:750 , (css) end:883 .
 
-+ main section have the following sections with the following klasse[
++ **main section have the following sections with the following klasse**[
   .main-section .item-2,
   .main-section .item-3,
   .main-section .item-4,
@@ -64,4 +64,4 @@ welcom to my page (VAMOS A LA PLAYA).
 
 ***footer***
 
-Footer:(html) start:566 , (html) end:605. //(css) start:884 , (css) end:989
++ Footer:(html) start:566 , (html) end:605. //(css) start:884 , (css) end:989
