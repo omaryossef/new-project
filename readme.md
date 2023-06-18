@@ -7,27 +7,45 @@
 
 ***start header***
 
-**navbar-header**: 
+**navbar-header:** 
 
-(html)start :21 ,(html) end:298 
+-(html)start :21 ,(html) end:298 
 
-- **left-header-box**:(html) start:23 , (html) end:32. //(css) start:23 , (css) end:60
+- **left-header-box:**
 
-- **right-header-box**:(html) start:34 , (html) end:39. //(css) start:61 , (css) end:73
+-(html) start:23 , (html) end:32. //(css) start:23 , (css) end:60
 
-- **search-box**:(html) start:41 , (html) end:51. //(css) start:75 , (css) end:114
+- **right-header-box:**
 
-- **header-text-box**:(html) start:41 , (html) end:283. {
+-(html) start:34 , (html) end:39. //(css) start:61 , (css) end:73
 
-- **planning list**:(html) start:61 , (html) end:96. //(css) start:145 , (css) end:239 .
+- **search-box:**
 
-- **Destinations list**:(html) start:98 , (html) end:136. //(css) start:145 , (css) end:239 .
+-(html) start:41 , (html) end:51. //(css) start:75 , (css) end:114
 
-- **hover effect for (planning & Destinations) list (with clase:hover-3)**:(css) start:227 , (css) end:238 .
+- **header-text-box:**
 
-- **contact form**:(html) start:138 , (html) end:186. //(css) start:392 , (css) end:458
+-(html) start:41 , (html) end:283. {
 
-- **slidshow container**:(html) start:190 , (html) end:292. //(css) start:460 , (css) end:598
+- **planning list:**
+
+-(html) start:61 , (html) end:96. //(css) start:145 , (css) end:239 .
+
+- **Destinations list:**
+
+-(html) start:98 , (html) end:136. //(css) start:145 , (css) end:239 .
+
+- **hover effect for (planning & Destinations) list (with clase:hover-3):**
+
+-(css) start:227 , (css) end:238 .
+
+- **contact form:**
+
+-(html) start:138 , (html) end:186. //(css) start:392 , (css) end:458
+
+- **slidshow container:**
+
+-(html) start:190 , (html) end:292. //(css) start:460 , (css) end:598
 
 .
 }
