@@ -29,18 +29,23 @@ welcom to my page (VAMOS A LA PLAYA).
 
 .
 }
+
+
 ***End Header***
 
 ***start Main***
+
+
 ***main*** : (html)start :303 ,(html) end:298 {
 
 + main-header-text:(html) start:305 , (html) end:314. //(css) start:606 , (css) end:628
 
-**Haoupt Blog (class:item-1)**:(html) start:317 , (html) end:329. //(css) start:630 , (css) end:748
++ Haoupt Blog (class:item-1):(html) start:317 , (html) end:329. //(css) start:630 , (css) end:748
 
-***Main sections***:(html) start:331 , (html) end:565. //(css) start:750 , (css) end:883
+***Main sections***:
+(html) start:331 , (html) end:565. //(css) start:750 , (css) end:883 .
 
-**main section have the following sections with the following klasse**[
++ main section have the following sections with the following klasse[
   .main-section .item-2,
   .main-section .item-3,
   .main-section .item-4,
@@ -48,11 +53,13 @@ welcom to my page (VAMOS A LA PLAYA).
   .main-section .item-6,
   .main-section .item-7,
   .main-section .item-8,
-  .main-section .item-9   ]
+  .main-section .item-9 .  
+  ]
   
-  all sections have the same HTML tags and every item has the fllowing HTML tags: {a ,class(stars-box) ,span ,i ,p ,h6}
++  all sections have the same HTML tags and every item has the fllowing HTML tags: {a ,class(stars-box) ,span ,i ,p ,h6}
   
 }
+
 ***Ende Main***
 
 ***footer***
