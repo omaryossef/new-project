@@ -1,7 +1,9 @@
-welcom to my page (VAMOS A LA PLAYA)
-               HOMEPAGE
+welcom to my page (VAMOS A LA PLAYA).
+               
+               HOMEPAGE.
 
-*********header********************
+*********header********************.
+
 navbar-header: (html)start :21 ,(html) end:298 {
 ** left-header-box:(html) start:23 , (html) end:32. //(css) start:23 , (css) end:60
 
