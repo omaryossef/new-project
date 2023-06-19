@@ -8,13 +8,6 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 10px;
 }
-
-//bg-color {   color:   #1F2833}
-//primary-color {color:#BC986A}
-
---secondary-color {
-  color: #ffffff;
-}
 body {
   background-color: #1f2833;
 }
@@ -33,6 +26,7 @@ body {
 }
 h1 {
   top: 0.8rem;
+
 }
 a {
   text-decoration: none;
@@ -46,9 +40,9 @@ a {
   height: 35px;
   position: relative;
   margin-right: 5px;
-  top: 0;
+  top: 0.5rem;
   transition: transform 0.3s ease;
-  background-color: #bc986a;
+  background-color: #b589089e;
   border-radius: 50%;
   text-align: center;
 }
@@ -64,18 +58,19 @@ a {
   color: rgb(255, 255, 255);
   display: inline-block;
   position: relative;
+ font-size: 1.5rem;
 }
 .navbar-header span {
-  font-weight: 600;
+top: 1rem;
+font-weight: 600;
   font-size: 1.4rem;
 }
 .right-header-box {
   float: right;
   display: block;
-
   width: 150px;
   height: 55px;
-  padding: 10px 15px;
+
 }
 
 #search-box {
@@ -116,7 +111,7 @@ i.fa-brands {
   margin-top: 5px;
   margin-right: 10px;
   text-align: center;
-  color: #f0eeeb;
+  color: #b589089e;
   cursor: pointer;
 }
 .header-text-box {
@@ -190,7 +185,7 @@ i.fa-bars {
   padding: 3rem;
   word-spacing: 0;
   border-bottom: none;
-  color: #bc986a;
+color: #bc986a;
 }
 #responsive-nav .first-list-menu ul li a {
   display: block;
@@ -201,7 +196,7 @@ i.fa-bars {
 }
 #responsive-nav .first-list-menu ul li a i {
   margin-right: 1rem;
-  color: #bc986a;
+  color: beige;
 }
 .second-list-text {
   position: absolute;
@@ -295,7 +290,6 @@ i.fa-bars {
   /*******/
   #responsive-nav .first-list-menu ul {
     width: 24rem;
-    height: 90vw;
     align-items: center;
     line-height: 1.5rem;
     margin-top: 0rem;
@@ -334,12 +328,12 @@ i.fa-bars {
   .right-header-box {
     display: none;
   }
-
+  
   #responsive-nav .first-list-menu ul {
     position: absolute;
     display: flex;
     flex-direction: column;
-    background-color: beige;
+    background-color: #BC986A;
     width: 30rem;
     height: 36rem;
     align-items: flex-start;
@@ -387,7 +381,7 @@ option {
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
-  padding-bottom: 2.2rem;
+   padding-top: 0rem;
 }
 
 input[type="submit"]:hover {
@@ -395,12 +389,12 @@ input[type="submit"]:hover {
 }
 
 .contact-container {
-  position: absolute;
+    position: absolute;
   border-radius: 5px;
   background-color: rgba(79, 78, 73, 1);
   padding: 20px;
   width: 70vw;
-  left: -50rem;
+ left: -50rem;
   margin-top: 1.6rem;
   margin: 0 auto;
 }
@@ -408,8 +402,9 @@ input[type="submit"]:hover {
   .contact-container {
     left: -25rem;
     width: 42rem;
+  
   }
-  input[type="text"],
+   input[type="text"],
   [type="email"],
   select,
   textarea {
@@ -423,6 +418,7 @@ input[type="submit"]:hover {
 }
 /*-------------end contact form---------------------*/
 /*--main-------------------------------------------------------*/
+
 .first-section {
   height: 800px;
   background-image: linear-gradient(
@@ -430,7 +426,7 @@ input[type="submit"]:hover {
       rgba(0, 0, 0, 0.9) 5%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(/blog-imag/cable-beach-alamy.webp);
+    url(/blog-imag/13.\ MANLY\ BEACH\ _SÍDNEY\,_AUSTRALIA.webp);
   background-position: center center;
   top: 0;
   left: 0;
@@ -533,6 +529,7 @@ h3 {
 .left-main-header-box p {
   font-size: 1rem;
   padding-left: 1rem;
+    color: #f0eeeb;
 }
 @media (max-width: 500px) {
   .second-section {
@@ -638,6 +635,7 @@ h6 {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+
 @media (max-width: 500px) {
   .second-section-right-container {
     width: 100%;
@@ -651,16 +649,8 @@ h6 {
 }
 .right-image-box img {
   object-fit: cover;
-  height: 100%;
+  height: 100px;
   width: 100%;
-  filter: grayscale();
-  transition: filter 0.4s ease-in-out;
-}
-.right-image-box img:hover {
-  border: 1px solid lightgray;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  cursor: pointer;
-  filter: none;
 }
 .second-section-right-text-box {
   margin-top: 50px;
@@ -685,7 +675,11 @@ h6 {
   padding-right: 15px;
   cursor: pointer;
 }
-
+.right-image-box img:hover {
+  border: 1px solid lightgray;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  cursor: pointer;
+}
 i {
   color: #bc986a;
   padding-bottom: 2rem;
@@ -708,14 +702,14 @@ i {
 /*------footer-------*/
 .card {
   width: 100%;
-  background-color: #38424E;
   margin-left: 2rem;
+  background-color: #38424e;
 }
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
-.card-text{
-  color: #BC986A;
+.card-text {
+  color: #bc986a;
   font-size: 1.2rem;
 }
 .card-title {
@@ -725,9 +719,9 @@ i {
   color: #bc986a;
 }
 .card-text-2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-top: -2rem;
-  color: white;
+   color: white;
 }
 .card-text-1 {
   font-size: 2rem;
@@ -748,7 +742,6 @@ i {
     color: #ff6600fa;
   }
 }
-
 .col-md-4 img {
   height: 100%;
 }
@@ -763,4 +756,11 @@ i {
 .card:hover .card-text-1::after {
   transition: transform 2s ease-in-out;
   transform: translateX(90px);
+}
+.py-3 {
+  position: relative;
+  top: 8rem;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  background-color: #bc986a;
 }

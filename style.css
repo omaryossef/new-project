@@ -128,10 +128,12 @@ i.fa-brands {
 ul {
   display: block;
   word-spacing: 15px;
+  width: 100%;
 }
 li {
   display: inline-block;
   height: 40px;
+  position: relative;
 }
 #nav-button {
   display: none;
@@ -291,14 +293,15 @@ i.fa-bars {
   #responsive-nav ul {
     position: relative;
     top: 4rem;
-    width: 21rem;
+    width: 22rem;
+    text-align: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-self: center;
     gap: 3rem;
     top: 0rem;
-    right: 16rem;
+    right: 17rem;
     border-radius: 6px;
     padding: 7rem;
     background-color: #3d3b37;
@@ -416,6 +419,10 @@ option {
 }
 
 .contact-container input[type="submit"] {
+  width: 12rem;
+  height: 3rem;
+  padding-top: 0.4rem;
+  text-align: center;
   background-color: #b589089e;
   color: white;
   border: none;
@@ -438,6 +445,7 @@ input[type="submit"]:hover {
   width: 90vw;
   left: 6rem;
   margin-top: 1.6rem;
+  z-index: 1;
 }
 @media (max-width: 480px) {
   .contact-container {
@@ -564,16 +572,19 @@ summary {
   }
   
   .slideshow-container {
-    left: -23rem;
+    left: -26rem;
+    position: absolute;
   }
   .fade img {
     height: 40rem;
     width: 40rem;
   }
+
 .circle-img-unterbox{
-position: relative;
-width: 100%;
-right: 23rem;  
+ position: absolute;
+ display: flex;
+ top: 45rem;
+ right: 10rem;
 }
 .dot{
   height: 0.8rem;
@@ -584,9 +595,9 @@ right: 23rem;
 @media (min-width: 481px) and (max-width: 1200px) {
   .fade img {
     width: 70vw;
-    height: 60rem;
+    height: 40rem;
     object-fit: cover;
-    object-position: center center;
+    object-position: center ;
   }
 }
 
@@ -806,10 +817,10 @@ color: whitesmoke;  line-height: 3rem;
 .main-section p {
   font-weight: 400;
   color: #f7f6f4;
-  line-height: 1.9rem;
-  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-size: 1.7rem;
   border-bottom: 1px solid gainsboro;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 .item-5 p,
 .item-6 p,
@@ -873,6 +884,9 @@ h6 {
 margin-bottom: 2rem;
     margin-left: 2rem;
   }
+  .main-section p{
+    line-height: 1.9rem;
+  }
 }
 #responsive-nav {
   display: block;
@@ -919,6 +933,7 @@ margin-bottom: 2rem;
   color: inherit;
   text-decoration: none;
   opacity: 0.6;
+  font-weight: 600;
 }
 
 .footer-dark ul a:hover {
@@ -946,6 +961,7 @@ margin-bottom: 2rem;
   opacity: 0.6;
   margin-bottom: 0;
   font-size: 1.4rem;
+  font-weight: 600;
 }
 .footer-dark I{
  color: #38424E;

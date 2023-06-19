@@ -1,4 +1,4 @@
-***welcom to my page (VAMOS A LA PLAYA).***
+***welcome to my page (VAMOS A LA PLAYA).***
             
 
 ***HOMEPAGE***
