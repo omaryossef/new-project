@@ -316,12 +316,12 @@ i.fa-bars {
   /*******/
   #responsive-nav .first-list-menu .hover-3 {
     width: 24rem;
-    height: 50%;
+   
     align-items: center;
     line-height: 1.5rem;
     margin-top: 0rem;
     z-index: 2;
-    margin-right: 5rem;
+    margin-right: -4rem;
     background-color: #3d3b37;
   }
   #responsive-nav .first-list-menu ul li {
@@ -442,14 +442,15 @@ input[type="submit"]:hover {
   background-color: rgb(79, 78, 73);
   padding: 20px;
   position: absolute;
-  width: 90vw;
-  left: 6rem;
+  width: 70vw;
+  left: -40rem;
   margin-top: 1.6rem;
   z-index: 1;
 }
 @media (max-width: 480px) {
   .contact-container {
-    left: -18rem;
+    left: -28rem;
+  width: 90vw;
   }
   input[type="text"],
   [type="email"],
